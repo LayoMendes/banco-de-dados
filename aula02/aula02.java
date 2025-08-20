@@ -14,7 +14,19 @@ class No<t>{
         return this.dado;
     }
 
+
     public void setDado(T dado){
         this.dado = dado;
+    }
+    public No<t> getNextNo(){
+        return this.nextNo;
+
+    }
+    public void setNextNo(No<t> nextNo){
+        this.nextNo = nextNo;
+    }
+    @Override
+    public String toString(){
+        return "Dado{" + getDado() + "}";
     }
 }
