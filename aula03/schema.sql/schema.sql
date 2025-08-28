@@ -52,19 +52,31 @@ CREATE TABLE venda_produto(
 
  )
 
+--usuario
+
 INSERT INTO usuario (nome, email, senha) VALUES ('Rafael', 'rafael@unipam', 'leafar');
 INSERT INTO usuario (nome, email, senha) VALUES ('Layo', 'layo@unipam', 'leafar');
 INSERT INTO usuario (nome, email, senha) VALUES ('Ana Clara Silva Dias', 'muiezinha@unipam', 'leafar');
 INSERT INTO usuario (nome, email, senha) VALUES ('pretinha', 'pretinha@unipam', 'leafar');
 
+--insere cliente
 
 INSERT INTO cliente (nome, telefone, usuario_id) VALUES ('Rafael Marinho', '999999', 1);
 INSERT INTO cliente (nome, telefone, usuario_id) VALUES ('Layo Mendes', '999999', 2);
 INSERT INTO cliente (nome, telefone, usuario_id) VALUES ('Ana Clara', '999999', 3);
 INSERT INTO cliente (nome, telefone, usuario_id) VALUES ('Pret', '999999', 4);
 
+--insere produtos
 
 INSERT INTO produto (nome, descricao, preco) VALUES ('Arroz 5kg', 'tipo bomzinho', 70.00);
 INSERT INTO produto (nome, descricao, preco) VALUES ('Aptamil Premium', '800g', 110.00);
 INSERT INTO produto (nome, descricao, preco) VALUES ('Neocate', '400g', 188.50);
 INSERT INTO produto (nome, descricao, preco) VALUES ('Fortini Plus', '400g', 110.00);
+
+
+--inserir vendas
+
+INSERT INTO venda (data, usuario_id, cliente_id) VALUES ('27-08-2025', 1, 1);
+INSERT INTO venda (data, usuario_id, cliente_id) VALUES ('28-08-2025', 2, 2);
+INSERT INTO venda (data, usuario_id, cliente_id) VALUES ('29-08-2025', 3, 3);
+INSERT INTO venda (data, usuario_id, cliente_id) VALUES ('30-08-2025', 4, 4);
