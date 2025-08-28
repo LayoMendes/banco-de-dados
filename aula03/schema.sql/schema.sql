@@ -52,6 +52,16 @@ CREATE TABLE venda_produto(
 
  )
 
+CREATE TABLE venda_produto(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    venda TEXT NOT NULL,
+    produto TEXT,
+    quantidade INTEGER,
+    preco_unit REAL NOT NULL CHECK (preco >= 0)
+);
+
+
+
 --usuario
 
 INSERT INTO usuario (nome, email, senha) VALUES ('Rafael', 'rafael@unipam', 'leafar');
@@ -80,3 +90,4 @@ INSERT INTO venda (data, usuario_id, cliente_id) VALUES ('27-08-2025', 1, 1);
 INSERT INTO venda (data, usuario_id, cliente_id) VALUES ('28-08-2025', 2, 2);
 INSERT INTO venda (data, usuario_id, cliente_id) VALUES ('29-08-2025', 3, 3);
 INSERT INTO venda (data, usuario_id, cliente_id) VALUES ('30-08-2025', 4, 4);
+
