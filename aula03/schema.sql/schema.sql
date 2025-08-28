@@ -52,13 +52,7 @@ CREATE TABLE venda_produto(
 
  )
 
-CREATE TABLE venda_produto(
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    venda TEXT NOT NULL,
-    produto TEXT,
-    quantidade INTEGER,
-    preco_unit REAL NOT NULL CHECK (preco >= 0)
-);
+
 
 
 
